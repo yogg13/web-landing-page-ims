@@ -1,0 +1,378 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "poppins", sans-serif;
+	scroll-behavior: smooth;
+}
+
+.navbar-container {
+	width: 100%;
+	height: 6rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #1c1e53;
+	position: fixed;
+}
+
+.navbar-container .logo img {
+	width: 7.5rem;
+	min-width: 5.5rem;
+	margin-left: 5rem;
+}
+
+.navbar-container .nav-list {
+	margin-right: 5rem;
+}
+
+.navbar-container .nav-list ul {
+	display: flex;
+	justify-content: center;
+	gap: 2rem 1rem;
+	align-items: center;
+}
+
+.navbar-container .nav-list li {
+	list-style-type: none;
+}
+
+.navbar-container .nav-list ul button {
+	background: #fcd980;
+	border: #fcd980 solid 3px;
+	color: #000;
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	transition: all 0.5s ease-out;
+}
+
+.navbar-container .nav-list ul button:hover {
+	background: #1c1e53;
+	color: #fff;
+	border: #fcd980 solid 3px;
+}
+
+.navbar-container .nav-list button > a:hover {
+	color: #fff;
+}
+
+.navbar-container .nav-list li a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 999px;
+	transition: all 0.4s ease-in-out;
+}
+
+.navbar-container .nav-list li:hover a {
+	background-color: #fcd980;
+	color: #000;
+}
+
+.navbar-container .nav-icon {
+	margin-right: 5rem;
+	display: none;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	background: #1c1e53;
+}
+
+.content {
+	width: 100%;
+	height: 100vh;
+	padding: 0 0 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin-top: 4.5rem;
+	margin-left: -2rem;
+}
+
+.content .content-image {
+	margin: 4rem 4.5rem 0 0;
+	width: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.content .content-description {
+	margin: 3rem 0 1.5rem 4.5rem;
+	width: 50%;
+}
+
+.content .content-description p {
+	line-height: 26px;
+	font-size: 1rem;
+}
+
+.content .content-description button {
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
+	background-color: #fcd980;
+	border: #fcd980 solid 1px;
+	border-radius: 40px;
+	padding: 12px 40px;
+	cursor: pointer;
+	transition: all;
+	transition-duration: 0.75s;
+}
+
+.content .content-description button:hover {
+	background: #1c1e53;
+	color: #fff;
+	border: #fcd980 solid 3px;
+}
+
+.content .content-description button a:hover {
+	color: #fff;
+}
+
+.container-menu-items {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-block: 2.5rem;
+}
+
+.container-menu-items h1 {
+	color: #000;
+	font-size: 3rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.menu-items {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-block: 3rem 1rem;
+}
+
+.menu-items .item {
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	width: 16.5rem;
+	background: #f4f6fc;
+}
+
+.menu-items .item .icon-item img {
+	width: 5rem;
+	background: #1c1e5313;
+	border-radius: 999px;
+	padding: 0.5rem;
+}
+
+.menu-items .item h2,
+p {
+	margin-block: 0.75rem;
+}
+
+.hero-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-block: 4.5rem;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.hero-content .content-image img {
+	margin: 0 0 0 2.5rem;
+}
+
+.hero-content .content-description {
+	flex-wrap: wrap;
+	margin: 0.5rem 2.5rem 0 0;
+	align-self: flex-start;
+}
+
+.hero-content .content-description h2 {
+	font-size: 2rem;
+}
+.hero-content .content-description p {
+	line-height: 26px;
+}
+
+.section-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-inline: 4.25rem;
+	text-align: center;
+	background: #1c1e53;
+	border-radius: 1.5rem;
+	padding: 2rem;
+}
+
+.section-content h1 {
+	font-size: 2rem;
+	color: #fff;
+	margin-block: 1rem;
+}
+
+.section-content p {
+	line-height: 26px;
+	color: #fff;
+}
+
+.section-content button {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
+	background-color: #fcd980;
+	border: #fcd980 solid 1px;
+	border-radius: 40px;
+	padding: 12px 40px;
+	cursor: pointer;
+	transition: all;
+	transition-duration: 0.75s;
+	margin-block: 1.5rem;
+}
+
+.section-content button:hover {
+	background: #1c1e53;
+	border: #fcd980 solid 3px;
+}
+.section-content button a:hover {
+	color: #fff;
+}
+
+.aside {
+	margin-inline: 4.25rem;
+	margin-block: 5rem;
+	display: flex;
+	border-radius: 60px;
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: 4px 4px 12px;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.aside .aside-profile {
+	display: flex;
+	flex-direction: column;
+	margin-block: 2.5rem;
+}
+
+.aside .aside-profile img {
+	width: 10rem;
+	border-radius: 60px;
+}
+
+.aside .aside-profile button.btn-fe {
+	margin-top: 1rem;
+	border-style: none;
+	border-bottom-left-radius: 24px;
+	background-color: #1c1e53;
+	color: #fff;
+	font-weight: 600;
+	padding: 0.75rem;
+}
+
+.aside .aside-desc .name {
+	margin-bottom: 2rem;
+}
+
+.aside .aside-desc p {
+	opacity: 0.7;
+	font-size: 1rem;
+}
+
+footer {
+	padding: 1.25rem;
+	background: #1c1e53;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	margin-block-start: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-container .nav-list {
+		display: flex;
+		position: absolute;
+		top: 2rem;
+		right: 2.5rem;
+		background-color: #fff;
+		width: 20rem;
+		border-radius: 12px;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.5s ease-out;
+		opacity: 0;
+	}
+
+	.navbar-container .nav-list.menu-nav-active {
+		opacity: 1;
+		top: 4.5rem;
+	}
+
+	.navbar-container .nav-list ul {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.navbar-container .nav-list ul li {
+		margin: 0.5rem 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar-container .nav-list ul li a {
+		color: #000;
+	}
+
+	.navbar-container .nav-list ul li a:hover {
+		color: #fff;
+		background-color: #1c1e53;
+	}
+
+	.navbar-container .nav-icon {
+		display: flex;
+		margin-right: 5rem;
+		cursor: pointer;
+	}
+	.content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 15rem;
+	}
+
+	.content .content-description {
+		text-align: center;
+		align-items: center;
+		margin: 0 0 10rem 0;
+		order: 2;
+	}
+
+	.content .content-image {
+		order: 1;
+		margin-right: 15rem;
+	}
+
+	.hero-content .content-description {
+		text-align: center;
+	}
+}
